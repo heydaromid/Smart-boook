@@ -1,0 +1,88 @@
+@import url(fonts/IranSans-X/fontiran.css);
+@import url(fonts/Kalameh/fontiran.css);
+
+:root {
+    --orange-color: rgb(250, 95, 26);
+    --orange-color-rgb: 250, 95, 26;
+    --dark-color: rgb(37, 37, 37);
+    --dark-color-rgb: 37, 37, 37;
+    --white-color: rgb(255, 255, 255);
+    --white-color-rgb: 255, 255, 255;
+    --other-color: rgb(247, 240, 240);
+    --other-color-rgb: 247, 240, 240;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    font-family: iransans, KalamehWebFaNum;
+    scroll-behavior: smooth;
+    background-color: var(--other-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: KalamehWebFaNum;
+    color: var(--dark-color);
+}
+
+.fw-900 {
+    font-weight: 900;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.link {
+    color: var(--dark-color);
+    cursor: pointer;
+    text-decoration: underline rgba(var(--dark-color-rgb), .4);
+}
+
+.link:hover {
+    color: var(--orange-color);
+    text-decoration: underline rgba(var(--orange-color-rgb), .4);
+    transition: .25s;
+}
+
+.btn-orange {
+    background-color: var(--orange-color);
+    color: var(--white-color);
+    text-decoration: none;
+    padding: 6px 20px;
+    border-radius: 8px;
+}
+
+.btn-orange:hover {
+    color: var(--dark-color);
+    background-color: rgba(var(--orange-color-rgb), .8);
+    transition: .25s;
+}
+
+header {
+    background-color: var(--white-color);
+    border-radius: 0 0 32px 32px;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.refrens {
+    background-color: var(--white-color);
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    border-radius: 32px;
+    cursor: default;
+}
+
+footer {
+    font-size: .75rem;
+    cursor: default;
+}
+
+.bg-load {
+    background-color: var(--other-color);
+    height: 23px;
+    width: 100%;
+    border-radius: 5px;
+}
